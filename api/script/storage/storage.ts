@@ -348,3 +348,9 @@ export class NameResolver {
       .catch(NameResolver.errorMessageOverride(ErrorCode.NotFound, `Deployment "${name}" does not exist.`));
   }
 }
+
+export interface UpdateAccountProperties {
+  azureAdId?: string;
+  gitHubId?: string;
+  microsoftId?: string;
+}
